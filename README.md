@@ -17,10 +17,9 @@ Also you can type: `b!info` and see all available commands directly on Discord.
 
 ### Result
 
-You will receieve a reminder message on the `reminderChannel` at `reminderHour` like:
+You will receive every new twit on the `postingChannel` like:
 
-Today is `Name`'s birthday (number)! :tada: :tada:
-(followed by a related image)
+> Twit account + twit text + twit media (if exits)
 
 ### Invite me!
 
