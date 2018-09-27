@@ -12,9 +12,9 @@ class Info(sendMessage: SendMessage) : Command(sendMessage) {
         const val END_RESPONSE =
                 "Here is the list of all available commands:\n\n" +
                 "Configuration:\n" +
-                "   **TODO\n" +
+                "   **TODO**\n" +
                 "Usage:\n" +
-                "   **TODO"
+                "   **TODO**"
     }
 
     override fun getLogger(): Logger = LoggerFactory.getLogger(Info::class.java)
