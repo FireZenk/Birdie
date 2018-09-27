@@ -1,0 +1,7 @@
+.idea/
+.gradle/
+build/
+out/
+database/**/*json
+database/**/lock/
+target
