@@ -4,5 +4,5 @@ import domain.repositories.TwitterRepository
 
 class GetTwitterTimeline(private val repository: TwitterRepository) {
 
-    fun execute() = repository.getTwiceTimeline()
+    fun execute(twitterUser: String) = repository.getLastTweetOf(twitterUser)
 }

@@ -16,7 +16,9 @@ class LastTweet(sendMessage: SendMessage, private val getTwitterTimeline: GetTwi
     override fun getLogger(): Logger = LoggerFactory.getLogger(LastTweet::class.java)
 
     override fun processEvent(event: Event) {
-        getTwitterTimeline.execute().subscribe({
+        val twitterUser = event.message.substring(START_KEYWORD.length, event.message.length).trim()
+
+        getTwitterTimeline.execute(twitterUser).subscribe({
             sendResponse(event.channel, it.last().text)
         }, {
             sendResponse(event.channel, ERROR_RESPONSE)

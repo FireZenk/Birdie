@@ -14,7 +14,7 @@ class Info(sendMessage: SendMessage) : Command(sendMessage) {
                 "Configuration:\n" +
                 "   **TODO**\n" +
                 "Usage:\n" +
-                "   **TODO**"
+                "   **b!lastTweet <accountName>**"
     }
 
     override fun getLogger(): Logger = LoggerFactory.getLogger(Info::class.java)

@@ -6,7 +6,7 @@ import twitter4j.Twitter
 
 class TwitterDataSource(private val twitter: Twitter) {
 
-    fun something(): Single<List<Status>> = Single.just(
-            twitter.timelines().getUserTimeline("JYPETWICE").map { it }.toList()
+    fun getLastTweetOf(screenName: String): Single<List<Status>> = Single.just(
+            twitter.timelines().getUserTimeline(screenName).map { it }.toList()
     )
 }

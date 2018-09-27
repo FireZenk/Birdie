@@ -11,7 +11,7 @@ Follow and post other account twits
 - Configuration
     - TODO
 - Usage
-    - TODO
+    - b!lastTweet `accountName`
 
 Also you can type: `b!info` and see all available commands directly on Discord.
 

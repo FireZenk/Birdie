@@ -4,5 +4,5 @@ import data.net.TwitterDataSource
 
 class TwitterRepository(private val twitter: TwitterDataSource) {
 
-    fun getTwiceTimeline() = twitter.something()
+    fun getLastTweetOf(twitterUser: String) = twitter.getLastTweetOf(twitterUser)
 }
