@@ -5,3 +5,4 @@ out/
 database/**/*json
 database/**/lock/
 target
+*.properties

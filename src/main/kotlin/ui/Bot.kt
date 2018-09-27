@@ -53,6 +53,8 @@ object Bot {
         when {
             it.message.startsWith(Info.START_KEYWORD, true)
             -> dependencies.info.processEvent(it)
+            it.message.startsWith(LastTweet.START_KEYWORD, true)
+            -> dependencies.lastTweet.processEvent(it)
         }
     }
 }

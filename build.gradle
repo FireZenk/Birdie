@@ -31,6 +31,8 @@ dependencies {
     compile 'de.btobastian.Javacord:javacord:22c8c32'
     compile 'ch.qos.logback:logback-classic:1.2.3'
 
+    compile 'org.twitter4j:twitter4j-core:[4.0,)'
+
     compile 'io.jsondb:jsondb-core:1.0.36'
 
     compile 'com.google.code.gson:gson:2.7'
